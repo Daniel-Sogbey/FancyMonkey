@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(videoRouter);
 
-const publicDirectoryPath = path.join(__dirname, "./public");
+const publicDirectoryPath = path.join(__dirname, "../public");
 
 app.use(express.static(publicDirectoryPath));
 

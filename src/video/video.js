@@ -6,14 +6,14 @@ const express = require("express");
 const router = new express.Router();
 
 router.get("/video", function(req, res) {
-  console.log(filePath.join(__dirname, "../public/assets/video.mp4"));
+  console.log(filePath.join(__dirname, "../../public/assets/video.mp4"));
 
   // const url = new URL("/watch?v=XlZx9VuH4Yw", "https://www.youtube.com/");
 
   // "Pixel.mkv";
   // "../public/assets/video.mp4";
 
-  const path = "../public/assets/video.mp4";
+  const path = filePath.join(__dirname, "../../public/assets/video.mp4");
   // "C:/Users/DANIEL/Desktop/Video-Streaming/src/public/assets/Pixel.mkv";
   const stat = fs.statSync(path);
 
